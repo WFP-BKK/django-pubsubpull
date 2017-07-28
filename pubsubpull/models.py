@@ -5,8 +5,11 @@ from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
 
-from pubsubpull.fields import JSONB
-
+try:
+    from django.contrib.postgres.fields import JSONField
+    from django.contrib.postgres.fields import JSONField as JSONB
+except ImportError:
+    from pubsubpull.fields import JSONB
 
 class Request(models.Model):
     """A web request.
