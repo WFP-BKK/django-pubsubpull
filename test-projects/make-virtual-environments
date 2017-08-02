@@ -16,3 +16,8 @@ mkvirtualenv  pubsubpull_1.9
 pip install -U -r common.pip -r django_1_9/setup.pip
 pip freeze
 deactivate
+
+mkvirtualenv  pubsubpull_1.11
+pip install -U -r common.pip -r django_1_11/setup.pip
+pip freeze
+deactivate

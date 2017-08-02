@@ -25,7 +25,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
+ATOMIC_REQUESTS = True
 
 # Application definition
 
